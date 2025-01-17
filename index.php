@@ -11,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <title>about</title>
 </head>
-<body>
-    <header>
+<!-- TO DO LIST-->
 
-    </header>
+<!-- IDEAS-->
+<body>
+    <?php include "./assets/pages_content/header.php"?>
     <main>
 
     </main>

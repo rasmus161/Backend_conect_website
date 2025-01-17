@@ -2,36 +2,38 @@
     --primary-color: #94c593;
     --secondary-color: #A1E8AF;
     --background-color: azure;
-     
-     --bright-text: azure;
-     --dark-text: #131212f1;
 
-     --blue-gray: #727c92;
-     --dark-blue: #372772;
-     --dark-purple: #3a2449;
-     --dark-green: #296b26;
+    --bright-text: azure;
+    --dark-text: #131212f1;
 
-     --primary-color-hover: #b1e6b0;
+    --blue-gray: #727c92;
+    --dark-blue: #372772;
+    --dark-purple: #3a2449;
+    --dark-green: #296b26;
 
-    }
+    --primary-color-hover: #b1e6b0;
 
- html { background-color: var(--secondary-color);}
+ }
+
+ html {
+    background-color: var(--secondary-color);
+ }
 
  body {
-     display: flex;
-     flex-direction: column;
-     max-width: 1500px;
-     min-height: 100vh;
-     font-family: 'Montserrat', sans-serif;
-     background-color: var(--background-color);
-     height: 100%;
-     margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    height: 100%;
+    margin: auto;
  }
 
 
  img {
-     max-width: 100%;
-     height: auto;
+    max-width: 100%;
+    height: auto;
  }
 
  /* this is a class is for finding bugs with site styles 
@@ -45,7 +47,98 @@
 }
    */
 
-/* footer styling */
+
+ /* Header styling and nav */
+
+ header {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--bright-text);
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 60px;
+ }
+
+
+
+ #logo-nav {
+    margin: 10px;
+    max-height: 150px;
+ }
+
+ .hover:hover {
+    opacity: 0.8;
+ }
+
+
+ .main-nav-ulv2 li a.active {
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+ }
+
+
+
+
+ li {
+    display: block;
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+ }
+
+ nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--bright-text);
+ }
+
+ .menu {
+    display: none;
+ }
+
+ .menu.show {
+    display: flex;
+ }
+
+ .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-left: 20px;
+
+ }
+
+
+ .hamburger:hover {
+    opacity: 0.9;
+ }
+
+ @media (min-width: 600px) {
+    .menu {
+       display: flex;
+       justify-content: flex-end;
+       width: 100%;
+       padding-right: 25px;
+    }
+
+    #logo-nav {
+       margin: 10px;
+       max-height: 100px;
+    }
+
+    li {
+       display: inline;
+       padding: 5px;
+    }
+
+    .hamburger {
+       display: none !important;
+    }
+ }
+
+ /* footer styling */
  footer {
     display: flex;
     justify-content: center;
@@ -56,4 +149,4 @@
     margin-top: auto;
     text-align: center;
 
-}
+ }
