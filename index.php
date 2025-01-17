@@ -18,7 +18,17 @@
 <body>
     <?php include "./assets/pages_content/header.php"?>
     <main>
+    <div class="container">
+        <div class="container-inner">
+            <div class="half-width">
+                <h2>server info</h2>
+            </div>
+            <div class="half-width">
+                <h2>user info</h2>
+            </div>
+        </div>
 
+    </div>
     </main>
     <footer>
 
