@@ -35,6 +35,17 @@
     max-width: 100%;
     height: auto;
  }
+ /* text and header styles */
+ h2 {
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 3px;
+}
 
  /*this is a class is for finding bugs with site styles 
 
@@ -163,6 +174,8 @@
 
 }
 
+
+
 .half-width {
    flex: 1;
    padding: 10px; /* Optional: Add some padding for better spacing */
@@ -172,13 +185,11 @@
    .container-inner {
        width: 100%;
        max-width: 100%;
-       padding: 20px;
+       padding-right: 20px;
    }
 }
 
-.container-inner p {
-   margin: 10px;
-}
+
 
  /* footer styling */
  footer {

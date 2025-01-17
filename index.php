@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,34 @@
 <!-- TO DO LIST-->
 <!-- fix logo links on other than main page not working -->
 <!-- IDEAS-->
- <!-- fix  spasing in the nav when howering over the nav -->
-<body>
-    <?php include "./assets/pages_content/header.php"?>
-    <main>
-    <div class="container">
-        <div class="container-inner">
-            <div class="half-width">
-                <h2>server info</h2>
-            </div>
-            <div class="half-width">
-                <h2>user info</h2>
-            </div>
-        </div>
+<!-- fix  spasing in the nav when howering over the nav -->
 
-    </div>
+<body>
+    <?php include "./assets/pages_content/header.php" ?>
+    <main>
+        <div class="container">
+            <div class="container-inner">
+                <div class="half-width">
+                    <h2>server info</h2>
+                    <div>
+                        <?php include "./assets/pages_content/server_info.php" ?>
+                    </div>
+                </div>
+                <div class="half-width">
+                    <h2>user info</h2>
+                    <div>
+                        <?php include "./assets/pages_content/user_info.php" ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
 
     </footer>
-    
-<script src="./main.js"></script>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
