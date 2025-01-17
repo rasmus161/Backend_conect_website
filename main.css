@@ -36,7 +36,7 @@
     height: auto;
  }
 
- /* this is a class is for finding bugs with site styles 
+ /*this is a class is for finding bugs with site styles 
 
  *{
    
@@ -130,7 +130,7 @@
 
     li {
        display: inline;
-       padding: 5px;
+       padding: 10px;
     }
 
     .hamburger {

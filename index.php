@@ -12,8 +12,9 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
-
+<!-- fix logo links on other than main page not working -->
 <!-- IDEAS-->
+ <!-- fix  spasing in the nav when howering over the nav -->
 <body>
     <?php include "./assets/pages_content/header.php"?>
     <main>
