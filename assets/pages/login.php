@@ -18,18 +18,21 @@
     <?php include "../pages_content/header.php" ?>
 
     <main>
+
+        
+        <?php include "./assets/pages_content/login_form.php" ?>
+
         <div class="container" id="container-login">
             <h2>login or sign up</h2>
-            <?php include "./assets/pages_content/login_form.php" ?>
 
-            <form action="welcome.php" method="post">
+            <form  method="post">
                 <label for="name">Name</label><br>
-                <input type="text" placeholder="Name"><br>
+                <input type="text" name="username" placeholder="Name" required><br>
 
                 <label for="email">Email</label><br>
-                <input type="text"placeholder="Email"><br>
+                <input type="text" name=email placeholder="Email" required><br>
 
-                <button type="submit">Login</button>
+                <button type="submit">Register</button>
             </form>
 
         </div>
