@@ -156,7 +156,7 @@ p {
    display: flex;
    text-align: center;
    justify-content: center;
-   color: var(--bright-text);
+   color: var(--dark-text);
    padding: 50px 10px 50px 10px;
 }
 
@@ -169,6 +169,7 @@ p {
    max-width: 800px;
    min-height: 300px;
    background-color: var(--secondary-color);
+   color: var(--bright-text);
    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
    padding: 30px;
 

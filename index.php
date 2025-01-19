@@ -16,6 +16,8 @@
 <!-- fix logo links on other than main page not working -->
 <!-- IDEAS-->
 <!-- fix  spasing in the nav when howering over the nav -->
+<!-- make about page in to 2 separate tabels of info -->
+  
 
 <body>
     <?php include "./assets/pages_content/header.php" ?>

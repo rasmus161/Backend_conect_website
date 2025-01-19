@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../css/login.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +16,23 @@
 
 <body>
     <?php include "../pages_content/header.php" ?>
-    <h1>login</h1>
-    <main>
 
+    <main>
+        <div class="container" id="container-login">
+            <h2>login or sign up</h2>
+            <?php include "./assets/pages_content/login_form.php" ?>
+
+            <form action="welcome.php" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Name"><br>
+
+                <label for="email">Email</label><br>
+                <input type="text"placeholder="Email"><br>
+
+                <button type="submit">Login</button>
+            </form>
+
+        </div>
     </main>
     <footer>
 
