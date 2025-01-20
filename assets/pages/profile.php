@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <title>Login</title>
+    <title>Profile</title>
 
     <!-- info ideas !-->
     <!-- lett the user only edit and save preferences on their own profile !-->
