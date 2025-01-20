@@ -17,6 +17,10 @@
     <?php include "../pages_content/header.php" ?>
     <h1>ads</h1>
     <main>
+        <div class="container" id="filter">
+            
+        </div>
+
 
     </main>
     <footer>

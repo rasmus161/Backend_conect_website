@@ -61,11 +61,7 @@
                 <div class="half" id="preferences-favorite">
                     <h3>Favorite activities</h3>
                     <form method="post">
-                        <label><input type="checkbox" name="favorite_activities[]" value="Reading"> Reading</label><br>
-                        <label><input type="checkbox" name="favorite_activities[]" value="Traveling"> Traveling</label><br>
-                        <label><input type="checkbox" name="favorite_activities[]" value="Cooking"> Cooking</label><br>
-                        <label><input type="checkbox" name="favorite_activities[]" value="Sports"> Sports</label><br>
-                        <label><input type="checkbox" name="favorite_activities[]" value="Music"> Music</label><br>
+                        <?php include "../pages_content/preference_forms.php" ?>
                         <button class="button-small" type="submit">Save</button>
                     </form>
 
@@ -73,11 +69,7 @@
                 <div class="half " id=" preferences-less-preferred">
                     <h3>Less preferred activities</h3>
                     <form method="post">
-                        <label><input type="checkbox" name="less_preferred_activities[]" value="Reading"> Reading</label><br>
-                        <label><input type="checkbox" name="less_preferred_activities[]" value="Traveling"> Traveling</label><br>
-                        <label><input type="checkbox" name="less_preferred_activities[]" value="Cooking"> Cooking</label><br>
-                        <label><input type="checkbox" name="less_preferred_activities[]" value="Sports"> Sports</label><br>
-                        <label><input type="checkbox" name="less_preferred_activities[]" value="Music"> Music</label><br>
+                        <?php include "../pages_content/preference_forms.php" ?>
                         <button class="button-small" type="submit">Save</button>
                     </form>
                 </div>
