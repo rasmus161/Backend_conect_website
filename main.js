@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     generateMenu();
 
 
-    // hamburger meny 
+    // hamburger menu  
 
     function hamburgerMenu() {
 

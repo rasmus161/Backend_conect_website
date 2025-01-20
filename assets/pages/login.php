@@ -32,7 +32,7 @@
                 <label for="email">Email</label><br>
                 <input type="text" name=email placeholder="Email" required><br>
 
-                <button type="submit">Register</button>
+                <button class="button-big" type="submit">Register</button>
             </form>
 
         </div>
