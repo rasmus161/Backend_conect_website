@@ -181,7 +181,7 @@
  .half-width {
     flex: 1;
     padding: 10px;
-    /* Optional: Add some padding for better spacing */
+    
  }
 
  @media (max-width: 800px) {
@@ -276,6 +276,7 @@
 
  /* preference section  */
 
+
  #container-preferences .half {
     flex: 50%;
  }
@@ -285,6 +286,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
+
 
  }
 

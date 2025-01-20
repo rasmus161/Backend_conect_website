@@ -1,0 +1,32 @@
+
+/* filter area*/
+
+#filter{
+    background-color: var(--primary-color);
+}
+
+/* profile areas */
+
+#profile-abs #left {
+    flex: 25%;
+
+}
+
+#profile-abs #right {
+    flex: 75%;
+
+}
+
+
+
+.container-inner #preferred {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#profile-abs #right p {
+    text-align: left;
+    line-height: 1.5;
+    margin: 20px;
+}
