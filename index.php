@@ -17,6 +17,7 @@
 <!-- IDEAS-->
 <!-- fix  spasing in the nav when howering over the nav -->
 <!-- make about page in to 2 separate tabels of info -->
+<!-- make time update with js every second to display time until date bether -->
   
 
 <body>
