@@ -79,6 +79,24 @@
         </div>
 
         <div class="container">
+            <div class="container-inner" id="container-date">
+                <h3>date timer</h3>
+
+                <div>
+                    
+                    <form method="post">
+
+                        <label for="date_input">Ange datum för dejten:</label>
+                        <input type="date" id="date_input" name="date_input" required>
+                        <button class="button-small" type="submit">Save</button>
+                    </form>
+                    <?php include "../pages_content/date.php" ?>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
 
         </div>
 
