@@ -19,8 +19,9 @@
 </head>
 
 <body>
-
-    <?php include "../pages_content/header.php" ?>
+    <header>
+        <?php include "../pages_content/header.php" ?>
+    </header>
     <main>
 
         <div class="container" id="profile-content">
@@ -83,7 +84,7 @@
                 <h3>tid tills dejten</h3>
 
                 <div>
-                    
+
                     <form method="post">
                         <label for="date_input">Ange datum för dejten:</label>
                         <input type="date" id="date_input" name="date_input" required>

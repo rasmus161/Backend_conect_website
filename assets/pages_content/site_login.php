@@ -1,4 +1,12 @@
 <?php
+
+// welcome revisiting users
+
+
+
+
+
+//login form logic
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize user input + protect against hackers
     $username = htmlspecialchars($_POST['username']);

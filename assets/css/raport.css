@@ -1,0 +1,41 @@
+/* this is a styling for the raport page */
+
+
+
+
+/* box2 */
+
+#content-box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #278ea5;
+    margin: 50px;
+
+}
+
+#content-box2 h2 {
+    padding-bottom: 40px;
+}
+
+#content-box2 h3 {
+    padding-top: 20px;
+
+}
+
+#content-box2 p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+
+
+
