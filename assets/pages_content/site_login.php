@@ -30,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mail($to, $subject, $message, $headers)) {
             echo "Registration successful! Please check your email for your password.";
         } else {
-            echo "Failed to send email.";
+            echo "<p>Failed to send email. </p>";
         }
     } else {
-        echo "Invalid inputs.";
+        echo "<p>Invalid inputs</p>";
     }
 }

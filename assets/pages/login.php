@@ -22,12 +22,14 @@
         <div class="container">
             <?php include "../pages_content/site_login_cockies.php" ?>
 
-            <?php include "../pages_content/site_login.php" ?>
+
         </div>
         <div class="container" id="container-login">
             <h2>login or sign up</h2>
 
-            <form method="post">
+            <?php include "../pages_content/site_login.php" ?>
+          
+            <form action="../pages/profile.php" method="post">
                 <label for="name">Name</label><br>
                 <input type="text" name="username" placeholder="Name" required><br>
 
