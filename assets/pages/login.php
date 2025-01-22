@@ -19,13 +19,13 @@
 
     <main>
 
-        
+
         <?php include "./assets/pages_content/login_form.php" ?>
 
         <div class="container" id="container-login">
             <h2>login or sign up</h2>
 
-            <form  method="post">
+            <form method="post">
                 <label for="name">Name</label><br>
                 <input type="text" name="username" placeholder="Name" required><br>
 
@@ -38,7 +38,7 @@
         </div>
     </main>
     <footer>
-
+        <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
     </footer>
 
     <script src="../../main.js"></script>

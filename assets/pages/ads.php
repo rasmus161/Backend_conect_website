@@ -60,7 +60,7 @@
 
     </main>
     <footer>
-
+        <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
     </footer>
 
     <script src="../../main.js"></script>
