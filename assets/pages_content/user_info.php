@@ -20,4 +20,6 @@ if (!isset($_COOKIE[$cookie_name])) {
     echo "<p>User IP address: " . $_SERVER['REMOTE_ADDR'] . "</p>";
 }
 
+
+
 ?>

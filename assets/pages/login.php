@@ -15,13 +15,15 @@
 </head>
 
 <body>
+
     <?php include "../pages_content/header.php" ?>
 
     <main>
+        <div class="container">
+            <?php include "../pages_content/site_login_cockies.php" ?>
 
-
-        <?php include "./assets/pages_content/login_form.php" ?>
-
+            <?php include "../pages_content/site_login.php" ?>
+        </div>
         <div class="container" id="container-login">
             <h2>login or sign up</h2>
 
@@ -30,7 +32,7 @@
                 <input type="text" name="username" placeholder="Name" required><br>
 
                 <label for="email">Email</label><br>
-                <input type="text" name=email placeholder="Email" required><br>
+                <input type="text" name="email" placeholder="Email" required><br>
 
                 <button class="button-big" type="submit">Register</button>
             </form>
