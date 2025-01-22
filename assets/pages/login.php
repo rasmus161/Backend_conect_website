@@ -29,7 +29,7 @@
 
             <?php include "../pages_content/site_login.php" ?>
           
-            <form action="../pages/profile.php" method="post">
+            <form  method="post">
                 <label for="name">Name</label><br>
                 <input type="text" name="username" placeholder="Name" required><br>
 

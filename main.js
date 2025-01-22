@@ -11,13 +11,30 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "ads", link: "assets/pages/ads.php" },
         { name: "info", link: "./index.php" },
         { name: "login", link: "assets/pages/login.php" },
-        
+
     ];
 
     // create the main menu 
     function generateMenu() {
         const currentPath = window.location.pathname;
         const nav = document.querySelector('.main-nav-ulv2');
+
+        //check if the user is logged in
+
+        fetch(baseUrl + 'assets/pages_content/check_login.php')
+            .then(Response => Response.json)
+            .then(data => {
+                if (data.loggedIn) {
+                    // Replace login link with profile link
+                    mainMenu.forEach(link => {
+                        if (link.name === "login"){
+                            link.name = "profile";
+                            link.link = "assets/pages/profile.php"
+                        }
+                    })
+                }
+            })
+
 
         mainMenu.forEach(link => {
             // Always use the base URL for constructing the links
@@ -73,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
+
 
 
 
