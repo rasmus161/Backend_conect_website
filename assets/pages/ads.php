@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <header>
+    
         <?php include "../pages_content/header.php" ?>
-    </header>
+    
     <main>
         <div class="container" id="filter">
             <div>

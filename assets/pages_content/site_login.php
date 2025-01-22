@@ -1,5 +1,7 @@
 <?php
 
+session_start(); // Starta sessionen
+
 //login form logic
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize user input + protect against hackers
@@ -8,6 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate email and check if username is not empty
     if (filter_var($email, FILTER_VALIDATE_EMAIL)  && !empty($username)) {
+
+
+        // Set session variables
+        $_SESSION['username'] = $username; 
 
         // Generate a random password
         $password = bin2hex(random_bytes(4));

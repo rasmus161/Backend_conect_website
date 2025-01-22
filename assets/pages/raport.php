@@ -17,9 +17,9 @@
 <body>
 
 
-    <header>
+  
         <?php include "../pages_content/header.php" ?>
-    </header>
+  
     <main>
         <div class="container">
             <h1>Webbrapport</h1>

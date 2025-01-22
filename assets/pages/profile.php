@@ -19,15 +19,15 @@
 </head>
 
 <body>
-    <header>
+    
         <?php include "../pages_content/header.php" ?>
-    </header>
+   
     <main>
 
         <div class="container" id="profile-content">
             <div id="left">
-                <h3>name here</h3>
-                <img src="../img/" alt="profile image">
+                
+                <?php include "../pages_content/profile_img_name.php" ?>
                 <div id="socials-container">
                     <img src="" alt="test1">
                     <img src="" alt="test2">
