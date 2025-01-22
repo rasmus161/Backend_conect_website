@@ -47,3 +47,10 @@
     }
 }
 
+
+/* date section */
+
+#container-date {
+    flex-direction: column;
+}
+
