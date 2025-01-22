@@ -14,6 +14,7 @@
 </head>
 <!-- TO DO LIST-->
 <!-- fix logo links on other than main page not working -->
+ <!-- fix raport site nav location -->
 <!-- IDEAS-->
 <!-- fix  spasing in the nav when howering over the nav -->
 <!-- make about page in to 2 separate tabels of info -->
