@@ -41,6 +41,7 @@
             </div>
 
         </div>
+        <?php include "./assets/pages_content/visit_count.php" ?>
     </main>
     <footer>
 
