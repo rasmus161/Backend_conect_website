@@ -2,6 +2,10 @@
 
 session_start(); // Starta sessionen
 
+// dell me later no php errors to frontend not god later remember meee !!!!
+error_reporting(E_ALL);
+ini_set('display_errors', 1) ;
+
 //login form logic
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize user input + protect against hackers
