@@ -1,10 +1,9 @@
 <?php
 
-
-
-// get user input and print out time until date
+// check for aql injections armets
 if (isset($_POST['date_input'])) {
     $inputDate = htmlspecialchars($_POST['date_input'], ENT_QUOTES, 'UTF-8');
+
 
     // validate user input 
     if (preg_match('/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/', $inputDate)) { // regular expression generated with the help of chat gpt
@@ -25,11 +24,16 @@ if (isset($_POST['date_input'])) {
 }
 
 
-// todays date
-// had to change to swedish time to get swedis time to change language consider fixing this in a bether way
-setlocale(LC_TIME, 'sv_SE.UTF-8');
-echo strftime("<p> idag: %A den %e %B", strtotime("today"));
+// todays date 
 
-// calculate and print the week number
+// Arrays for Swedish day and month names
+$swedishDays = ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
+$swedishMonths = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
+
+$dayOfWeek = $swedishDays[date("w")];
+$day = date("j");
+$month = $swedishMonths[date("n")  - 1];
 $weekNumber = date("W");
-echo " (Vecka $weekNumber)</p>";
+
+echo "<p> idag: $dayOfWeek den $day $month </p>"; 
+echo " (Vecka: $weekNumber)</p>";

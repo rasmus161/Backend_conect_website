@@ -1,3 +1,4 @@
+<?php include "../pages_content/initial.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,16 +82,16 @@
 
         <div class="container">
             <div class="container-inner" id="container-date">
-                <h3>tid tills dejten</h3>
+                <h3>Time until date</h3>
 
                 <div>
 
                     <form method="post">
-                        <label for="date_input">Ange datum för dejten:</label>
+                        <label for="date_input">time for date:</label>
                         <input type="date" id="date_input" name="date_input" required>
                         <button class="button-small" type="submit">Save</button>
                     </form>
-                    <?php include "../pages_content/date.php" ?>
+                    <?php include "../pages_content/uppgift2/date.php" ?>
                 </div>
 
             </div>
