@@ -1,6 +1,6 @@
 <?php
 
-session_start(); // Starta sessionen
+
 
 // dell me later no php errors to frontend not god later remember meee !!!!
 error_reporting(E_ALL);

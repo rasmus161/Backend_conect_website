@@ -1,3 +1,4 @@
+<?php include "./assets/pages_content/initial.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/css/info.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,29 +24,31 @@
 
 
 <body>
+
     <?php include "./assets/pages_content/header.php" ?>
+
     <main>
         <div class="container">
             <div class="container-inner">
                 <div class="half-width">
                     <h2>server info</h2>
-                    <div>
-                        <?php include "./assets/pages_content/server_info.php" ?>
+                    <div class="p-position">
+                        <?php include "./assets/pages_content/uppgift1/server_info.php" ?>
                     </div>
                 </div>
                 <div class="half-width">
                     <h2>user info</h2>
-                    <div>
-                        <?php include "./assets/pages_content/user_info.php" ?>
+                    <div class="p-position">
+                        <?php include "./assets/pages_content/uppgift1/user_info.php" ?>
                     </div>
                 </div>
             </div>
 
         </div>
-      
+
     </main>
     <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
     </footer>
 
     <script src="./main.js"></script>
