@@ -1,3 +1,4 @@
+<?php include "../pages_content/site_login.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +28,6 @@
         <div class="container" id="container-login">
             <h2>login or sign up</h2>
 
-            <?php include "../pages_content/site_login.php" ?>
           
             <form  method="post">
                 <label for="name">Name</label><br>
