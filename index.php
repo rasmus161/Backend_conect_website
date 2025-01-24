@@ -41,10 +41,10 @@
             </div>
 
         </div>
-        <?php include "./assets/pages_content/visit_count.php" ?>
+      
     </main>
     <footer>
-
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
 
     <script src="./main.js"></script>

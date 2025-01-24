@@ -1,7 +1,12 @@
 <?php 
 
-$myfile = fopen("visitors.txt", "w+") or die("unable to open file no2! ");
+$myfile = fopen("visitors.txt", "a") or die("unable to open file no4! ");
 
-echo fread($myfile,filesize(("visitors.txt")));
+// write to the fille 
+$ip = $_SERVER['REMOTE_ADDR'];
+
+fwrite($myfile, $ip);
 fclose($myfile);
+
+
 
