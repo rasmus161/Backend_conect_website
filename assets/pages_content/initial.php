@@ -14,3 +14,14 @@ if (!isset($_COOKIE[$cookie_name])) {
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
     setcookie($cookie_time, date("Y-m-d H:i:s"), time() + (86400 * 30), "/");
 }
+
+//login check not final obs!
+$logedIn = false;
+
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+    $logedIn = true;
+} else {
+    $username = 'Guest';
+    $logedIn = false;
+}

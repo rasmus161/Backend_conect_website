@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //check if the user is logged in
 
-        fetch(baseUrl + 'assets/pages_content/check_login.php')
+        fetch(baseUrl + 'assets/pages_content/initial.php')
             .then(Response => Response.json)
             .then(data => {
                 if (data.loggedIn) {

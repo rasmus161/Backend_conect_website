@@ -1,4 +1,5 @@
 <?php include "./assets/pages_content/initial.php" ?>
+<?php include "./assets/pages_content/check_login.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
