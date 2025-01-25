@@ -6,7 +6,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1) ;
 
-//login form logic
+//sign up form logic
+
+$signupSuccess = false;
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve and sanitize user input + protect against hackers
     $username = htmlspecialchars($_POST['username']);
@@ -39,4 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<p>Invalid inputs</p>";
     }
+
+    $signupSuccess = true;
+}
+
+if ($signupSuccess) {
+    header("refresh:5;url=https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/login.php");
 }
