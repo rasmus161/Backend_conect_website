@@ -1,3 +1,4 @@
+<?php include "../pages_content/site_login.php" ?>
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -17,9 +18,9 @@
 <body>
 
 
-  
-        <?php include "../pages_content/header.php" ?>
-  
+
+    <?php include "../pages_content/header.php" ?>
+
     <main>
         <div class="container">
             <h1>Webbrapport</h1>
@@ -45,7 +46,7 @@
     </main>
 
     <footer>
-       <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
+        <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
     </footer>
 
     <script src="../../main.js"></script>

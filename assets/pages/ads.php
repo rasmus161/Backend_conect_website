@@ -1,3 +1,4 @@
+<?php include "../pages_content/site_login.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,9 +16,9 @@
 </head>
 
 <body>
-    
-        <?php include "../pages_content/header.php" ?>
-    
+
+    <?php include "../pages_content/header.php" ?>
+
     <main>
         <div class="container" id="filter">
             <div>

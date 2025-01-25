@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainMenu = [
         { name: "ads", link: "assets/pages/ads.php" },
         { name: "info", link: "./index.php" },
-        { name: "login", link: "assets/pages/login.php" },
+        { name: "login", link: "assets/pages/signup.php" },
 
     ];
 
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.loggedIn) {
                     // Replace login link with profile link
                     mainMenu.forEach(link => {
-                        if (link.name === "login"){
-                            link.name = "profile";
-                            link.link = "assets/pages/profile.php"
+                        if (link.name === "signup") {
+                            link.name = "login";
+                            link.link = "assets/pages/login.php"
                         }
                     })
                 }

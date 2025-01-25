@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <title>Login</title>
+    <title>signup</title>
 </head>
 
 <body>
- <!-- underconstruction chec carefuly for mistates yap -->
+
     <?php include "../pages_content/header.php" ?>
 
     <main>
@@ -26,18 +26,18 @@
 
         </div>
         <div class="container" id="container-login">
-            <?php include "../pages_content/site_login.php" ?>
-            <h2>Login</h2>
+            <?php include "../pages_content/uppgift3/site_signup.php" ?>
+            <h2>Sign up</h2>
 
 
             <form method="post">
                 <label for="username">Username</label><br>
                 <input type="text" name="username" id="username" placeholder="Name" required><br>
 
-                <label for="password">password</label><br>
-                <input type="password" name="password" id="password" placeholder="Password" required><br>
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Email" required><br>
 
-                <button class="button-big" type="submit">Login</button>
+                <button class="button-big" type="submit">Register</button>
             </form>
 
         </div>
