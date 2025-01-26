@@ -12,7 +12,7 @@ $visits = file_exists($fileName) ? file(FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_
 
 // check if it is the users first visit or not
 $isNewVisitor = true;
-foreach ($visits as $visits) {
+foreach ($visits as $visit) {
     list($visitIp, $visitTime) = explode(" - ", $visit); // separate visit time and ip
     if ($visitIp == $ip) {
         $isNewVisitor  = false;
