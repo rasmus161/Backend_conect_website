@@ -1,4 +1,5 @@
 <?php include "./assets/pages_content/initial.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +27,7 @@
 <body>
 
     <?php include "./assets/pages_content/header.php" ?>
-
+    <?php include "./assets/pages_content/uppgift6/visit_count.php" ?>
     <main>
         <div class="container">
             <div class="container-inner">
