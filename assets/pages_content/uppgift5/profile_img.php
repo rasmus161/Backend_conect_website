@@ -3,6 +3,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// the script is not finding the uploads folder ?
+
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["file-upload-input"]["name"]);
 

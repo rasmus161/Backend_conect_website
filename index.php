@@ -17,6 +17,10 @@
 </head>
 <!-- TO DO LIST-->
 <!-- fix logo links on other than main page not working -->
+<!-- fille premition errors on uppg 6 visit count fix  -->
+<!-- folder uploads not found by uppg 5 profile img fix -->
+<!-- add styling to porile img upload section -->
+
 
 <!-- IDEAS-->
 <!-- fix  spasing in the nav when howering over the nav -->
@@ -27,7 +31,7 @@
 <body>
 
     <?php include "./assets/pages_content/header.php" ?>
-   <!-- broken  include "./assets/pages_content/uppgift6/visit_count.php" ?> -->
+    <!-- broken  include "./assets/pages_content/uppgift6/visit_count.php" ?> -->
     <main>
         <div class="container">
             <div class="container-inner">
