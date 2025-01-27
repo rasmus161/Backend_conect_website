@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$target_dir = "../../uploads/";
+$target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["file-upload-input"]["name"]);
 
 $uploadsOk = 1;
@@ -49,12 +49,12 @@ if (isset($_POST["submit"])) {
 
     // check if $uploadsOk  is set 0 by something not passing a check or if all checks passed and upload the file
     if ($uploadsOk == 0) {
-        echo "sorry, could not upload file";
+        echo "Sorry, could not upload file";
     } else {
         if (move_uploaded_file($_FILES["file-upload-input"]["tmp_name"], $target_file)) {
-            echo "the file " . htmlentities(basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
+            echo "The file " . htmlentities(basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
         } else {
-            echo "sorry, there was an error uploading your file.";
+            echo "Sorry, there was an error uploading your file.";
         }
     }
 }
