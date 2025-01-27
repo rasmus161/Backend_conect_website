@@ -29,13 +29,22 @@
             <div id="left">
 
                 <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?>
-                
+                <?php include "./assets/pages_content/uppgift5/profile_img.php" ?>
+
                 <div id="socials-container">
                     <img src="" alt="test1">
                     <img src="" alt="test2">
                     <img src="" alt="test3">
 
                 </div>
+
+                <form action="../pages_content/uppgift5/profile_img.php" method="post" enctype="multipart/form-data" id="profile-img-form">
+                    <label>Update profile image</label>
+                    <input type="file" name="file-upload-input" id="file-upload-input">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+
+
             </div>
             <div id="right">
                 <div id="start-chat-button">

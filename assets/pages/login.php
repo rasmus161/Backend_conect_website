@@ -30,7 +30,7 @@
             <h2>Login</h2>
 
 
-            <form method="post">
+            <form method="POST">
                 <label for="username">Username</label><br>
                 <input type="text" name="username" id="username" placeholder="Name" required><br>
 
