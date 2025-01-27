@@ -27,4 +27,34 @@ if (isset($_POST["submit"])) {
         echo "No file uploaded.";
         $uploadsOk = 0;
     }
+
+
+    // check if  file already exist if it does rename it to a random name
+    if (file_exists($target_file)) {
+        $target_file = $target_dir . rand() . '.' . $imageFileType;
+    }
+
+
+    //check file size 5 MB max
+    if ($_FILES["file-upload-input"]["size"] > 5000000) {
+        echo "file is to large (max 5 MB)";
+        $uploadsOk = 0;
+    }
+
+    // only alow cretan file format (jpg, png, jpeg, gif)
+    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
+        echo "wrong fle format (only jpg, png, jpeg or gif)";
+        $uploadsOk = 0;
+    }
+
+    // check if $uploadsOk  is set 0 by something not passing a check or if all checks passed and upload the file
+    if ($uploadsOk == 0) {
+        echo "sorry, could not upload file";
+    } else {
+        if (move_uploaded_file($_FILES["file-upload-input"]["tmp_name"], $target_file)) {
+            echo "the file " . htmlentities(basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
+        } else {
+            echo "sorry, there was an error uploading your file.";
+        }
+    }
 }
