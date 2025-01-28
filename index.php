@@ -31,7 +31,7 @@
 <body>
 
     <?php include "./assets/pages_content/header.php" ?>
-    <!-- broken  include "./assets/pages_content/uppgift6/visit_count.php" ?> -->
+    <!-- broken <?php include "./assets/pages_content/uppgift6/visit_count.php" ?>
     <main>
         <div class="container">
             <div class="container-inner">

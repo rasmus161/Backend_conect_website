@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$fileName = "visit_count.txt";
+$fileName = "./assets/pages_content/uppgift6/visit_count.txt";
 $ip = $_SERVER['REMOTE_ADDR'];
 $time = date("Y-m-d H:i:s");
 
