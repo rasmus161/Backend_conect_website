@@ -1,11 +1,6 @@
 <?php
 
 
-
-// dell me later no php errors to frontend not god later remember meee !!!!
-error_reporting(E_ALL);
-ini_set('display_errors', 1) ;
-
 //sign up form logic
 
 $signupSuccess = false;

@@ -16,10 +16,10 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
+<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 broken,  5 broken and not styled, 6, 7 undone -->
 <!-- fix logo links on other than main page not working -->
-<!-- fille premition errors on uppg 6 visit count fix  -->
 <!-- folder uploads not found by uppg 5 profile img fix -->
-<!-- add styling to porile img upload section -->
+<!-- add styling to profile img upload section -->
 
 
 <!-- IDEAS-->

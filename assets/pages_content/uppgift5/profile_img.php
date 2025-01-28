@@ -1,11 +1,13 @@
 <?php
-// dell me later no php errors to frontend not god later remember meee !!!!
+
+
+// del me only for error testing
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // the script is not finding the uploads folder ?
 
-$target_dir = "uploads/";
+$target_dir = "./assets/pages_content/uppgift5/uploads/";
 $target_file = $target_dir . basename($_FILES["file-upload-input"]["name"]);
 
 $uploadsOk = 1;
@@ -60,3 +62,5 @@ if (isset($_POST["submit"])) {
         }
     }
 }
+
+
