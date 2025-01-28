@@ -40,7 +40,8 @@
 
 
 
-    #profile-content .right , #profile-content .left {
+    #profile-content .right,
+    #profile-content .left {
         flex: 100%;
 
 
@@ -54,3 +55,22 @@
     flex-direction: column;
 }
 
+/* chat section */
+
+#chat-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#chat-area {
+    width:  700px;
+    height: 200px;
+    margin-top: 20px;
+    resize: none
+}
+
+@media (max-width: 750px) {
+    #chat-area {
+        width: 300px;
+    }
+}

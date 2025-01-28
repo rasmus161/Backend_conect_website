@@ -107,7 +107,10 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="chat-content">
+            <h2>Leave a cement below</h2>
+
+            <textarea name="profile-chat" id="chat-area"></textarea>
 
         </div>
 
