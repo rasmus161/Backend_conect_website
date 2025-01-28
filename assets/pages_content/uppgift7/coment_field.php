@@ -1,1 +1,4 @@
 <?php 
+
+$commentsFile = 'comments.txt';
+

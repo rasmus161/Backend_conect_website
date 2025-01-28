@@ -111,12 +111,13 @@
             <h2>Leave a cement below</h2>
 
             <textarea name="profile-chat" id="chat-area"></textarea>
+            <button class="button-small">send chat</button>
 
         </div>
 
 
-
     </main>
+
     <footer>
         <p> &copy; 2025-<?php echo date("Y"); ?> Rasmus.p All Rights Reserved</p>
     </footer>
