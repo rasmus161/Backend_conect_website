@@ -23,7 +23,7 @@
     <main>
         <div class="container">
 
-            <?php include "../pages_content/uppgift4/site_login_mesage.php" ?>
+         <?php include "../pages_content/uppgift4/site_login_mesage.php" ?>
 
         </div>
         <div class="container" id="container-login">
@@ -33,7 +33,7 @@
 
             <form action="" method="post">
                 <label for="username_login">Username</label><br>
-                <input type="text" name="username" id="username" placeholder="Name" required><br>
+                <input type="text" name="username-login"  placeholder="Name" required><br>
 
                 <label for="password">password</label><br>
                 <input type="password" name="password" id="password" placeholder="Password" required><br>

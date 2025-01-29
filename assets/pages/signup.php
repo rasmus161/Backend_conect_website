@@ -23,11 +23,11 @@
     <main>
         <div class="container">
 
-            <?php include "../pages_content/uppgift4/site_login_mesage.php" ?>
+            <?php include "../pages_content/uppgift3/site_signup.php" ?>
 
         </div>
         <div class="container" id="container-login">
-            <?php include "../pages_content/uppgift3/site_signup.php" ?>
+
             <h2>Sign up</h2>
 
 

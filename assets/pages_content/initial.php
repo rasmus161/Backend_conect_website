@@ -4,6 +4,7 @@
 session_start();
 
 
+
 // set users cookies 
 
 $cookie_name = "user"; // add test_input obs!!
@@ -16,7 +17,6 @@ if (!isset($_COOKIE[$cookie_name])) {
 }
 
 // input data validator
-
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -24,13 +24,4 @@ function test_input($data) {
     return $data;
   }
 
-//login check not final obs!
-$logedIn = false;
 
-if (isset($_SESSION['username'])) {
-    $username = $_SESSION['username'];
-    $logedIn = true;
-} else {
-    $username = 'Guest';
-    $logedIn = false;
-}

@@ -43,5 +43,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // redirect to login
 
 if ($signupSuccess) {
-    header("refresh:5;url=https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/login.php");
+    header("refresh:3;url=https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/login.php");
 }
