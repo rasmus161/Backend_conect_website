@@ -19,11 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "info", link: "./index.php" },
         { name: isLoggedIn ? "profile" : hasSignedUp ? "login" : "signup", link: isLoggedIn ? "assets/pages/profile.php" : hasSignedUp ? "assets/pages/login.php" : "assets/pages/signup.php" },
 
+
     ];
 
     // Add logout link if logged in
     if (isLoggedIn) {
-        mainMenu.push({name: "logout", link: "/assets/pages/login.php"})
+        mainMenu.push({ name: "logout", link: "/assets/pages_content/logout.php" })
     }
 
     // create the main menu 
@@ -31,7 +32,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentPath = window.location.pathname;
         const nav = document.querySelector('.main-nav-ulv2');
 
+        // Filter out links to be removed on logout
+        const filteredMenu = mainMenu.filter(link => {
+            if (!isLoggedIn && (link.name === "profile" || link.name === "logout")) {
+                return false;
+            }
+            return true;
+        });
 
+
+        filteredMenu.forEach(link => {
+            // Always use the base URL for constructing the links
+            let href = baseUrl + link.link.replace('./', '');
+            let isActive = '';
+
+            // Check if the current link is active
+            if (currentPath.includes(link.link)) {
+                isActive = 'active';
+            }
+
+            // Create the menu item
+            const li = document.createElement('li');
+            li.classList.add('nav-item', isActive);
+            const a = document.createElement('a');
+            a.href = href;
+            a.textContent = link.name;
+            li.appendChild(a);
+            nav.appendChild(li);
+        });
 
 
         mainMenu.forEach(link => {

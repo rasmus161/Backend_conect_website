@@ -25,10 +25,11 @@ $_SESSION['psw']  = $password;
 
 
 
+
 if (isset($_COOKIE['first_visit_time'], $_SESSION['name'])) {
     echo "<h2>Welcome back! " . $_SESSION['name'] . " You visited us for the first time in " . $_COOKIE['first_visit_time'] . "</h2>";
 } else {
-    echo "error";
+    echo "error loading message ";
 }
 
 if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -37,8 +38,8 @@ if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 
 
 
 if ($loginSuccess) {
-    setcookie('user', 'true', time() + (86400 * 365 * 10), "/"); 
-    
+   
+    setcookie('login', 'true', time() + (86400 * 365 * 10), "/"); 
     header("refresh: 3; url = profile.php");
     exit(); // Terminate script execution to ensure redirection
     

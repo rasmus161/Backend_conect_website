@@ -16,7 +16,7 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
-<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden”, 
+<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden” + not removing logout/changing profile to login on logout, 
   5 broken and not styled, 6, 7 no php logic -->
 
 <!-- fix logo links on other than main page not working -->

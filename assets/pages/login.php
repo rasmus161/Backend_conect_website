@@ -1,5 +1,4 @@
 <?php include "./assets/pages_content/initial.php" ?>
-<?php include "./assets/pages_content/uppgift4/site_login_logick.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
