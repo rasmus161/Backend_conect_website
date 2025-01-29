@@ -31,7 +31,7 @@
             <h2>Sign up</h2>
 
 
-            <form method="post">
+            <form action="" method="post">
                 <label for="username">Username</label><br>
                 <input type="text" name="username" id="username" placeholder="Name" required><br>
 

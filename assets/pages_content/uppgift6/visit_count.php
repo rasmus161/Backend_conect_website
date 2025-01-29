@@ -10,11 +10,16 @@ $time = date("Y-m-d H:i:s");
 // read fille content into a array
 $visits = file_exists($fileName) ? file($fileName, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) : [];
 
-// check if it is the users first visit or not
 
+
+// check if it is the users first visit or not
 $isNewVisitor = true;
 foreach ($visits as $visit) {
-    list($visitIp, $visitTime) = explode(" - ", $visit); // separate visit time and ip
+    $visitParts = explode(" - ", $visit); // separate visit time and ip into a array
+    if (count($visitParts) < 2) {
+        continue; // skip invalid lines
+    }
+    list($visitIp, $visitTime) = $visitParts; // set names to the array content
     if ($visitIp == $ip) {
         $isNewVisitor = false;
         break;
@@ -25,7 +30,11 @@ foreach ($visits as $visit) {
 
 $uniqueIps = [];
 foreach ($visits as $visit) {
-    $visitIp = explode(" - ", $visit)[0];
+    $visitParts = explode(" - ", $visit);
+    if (count($visitParts) < 2) {
+        continue; // skip invalid lines
+    }
+    $visitIp = $visitParts[0];
     if (!in_array($visitIp, $uniqueIps)) {
         $uniqueIps[] = $visitIp;
     }

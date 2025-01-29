@@ -1,4 +1,5 @@
 <?php include "./assets/pages_content/initial.php" ?>
+<?php include "./assets/pages_content/uppgift4/site_login_logick.php"?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,8 +31,8 @@
             <h2>Login</h2>
 
 
-            <form method="POST">
-                <label for="username">Username</label><br>
+            <form action="" method="post">
+                <label for="username_login">Username</label><br>
                 <input type="text" name="username" id="username" placeholder="Name" required><br>
 
                 <label for="password">password</label><br>

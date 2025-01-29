@@ -15,9 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)  && !empty($username)) {
 
 
-        // Set session variables
-        $_SESSION['username'] = $username; 
-
+        
         // Generate a random password
         $password = bin2hex(random_bytes(4));
 
@@ -41,6 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $signupSuccess = true;
 }
+
+// redirect to login
 
 if ($signupSuccess) {
     header("refresh:5;url=https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/login.php");
