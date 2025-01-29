@@ -43,8 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // redirect to login
 
 if ($signupSuccess) {
-    setcookie('signedUp', 'true', time() + (86400 * 30), "/"); // 86400 = 1 day
-    header("Location: login.php");
+    setcookie('signedUp', 'true', time() + (86400 * 30), "/");
+    header("refresh: 3; url = login.php");
     exit(); // Terminate script execution to ensure redirection
-    
+
 }

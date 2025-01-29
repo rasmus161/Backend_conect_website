@@ -17,9 +17,6 @@ $usernameLogin = test_input($_REQUEST['username-login']);
 $password = test_input($_REQUEST['password']);
 
 
-
-
-
 // write data to session
 
 $_SESSION['name'] = $usernameLogin;
@@ -41,7 +38,8 @@ if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 
 
 if ($loginSuccess) {
     setcookie('user', 'true', time() + (86400 * 365 * 10), "/"); 
-    header("Location: profile.php");
+    
+    header("refresh: 3; url = profile.php");
     exit(); // Terminate script execution to ensure redirection
     
 }
