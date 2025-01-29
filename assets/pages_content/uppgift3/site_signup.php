@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)  && !empty($username)) {
 
 
-        
+
         // Generate a random password
         $password = bin2hex(random_bytes(4));
 
@@ -43,5 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // redirect to login
 
 if ($signupSuccess) {
-    header("refresh:3;url=https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/login.php");
+    setcookie('signedUp', 'true', time() + (86400 * 30), "/"); // 86400 = 1 day
+    header("Location: login.php");
+    exit(); // Terminate script execution to ensure redirection
+    
 }

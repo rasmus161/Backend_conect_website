@@ -6,34 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // Base URL for the website
     const baseUrl = 'https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/'
 
+
+
+    // Check user status
+    const isLoggedIn = document.cookie.includes('user='); // Check if the user cookie is set
+    const hasSignedUp = document.cookie.includes('signedUp='); // Check if the signedUp cookie is set
+
+
     // meny links 
     const mainMenu = [
         { name: "ads", link: "assets/pages/ads.php" },
         { name: "info", link: "./index.php" },
-        { name: "login", link: "assets/pages/signup.php" },
+        { name: isLoggedIn ? "profile" : hasSignedUp ? "login" : "signup", link: isLoggedIn ? "assets/pages/profile.php" : hasSignedUp ? "assets/pages/login.php" : "assets/pages/signup.php" },
 
     ];
+
+    // Add logout link if logged in
+    if (isLoggedIn) {
+        mainMenu.push({name: "logout", link: "/assets/pages/login.php"})
+    }
 
     // create the main menu 
     function generateMenu() {
         const currentPath = window.location.pathname;
         const nav = document.querySelector('.main-nav-ulv2');
 
-        //check if the user is logged in
 
-        fetch(baseUrl + 'assets/pages_content/initial.php')
-            .then(Response => Response.json)
-            .then(data => {
-                if (data.loggedIn) {
-                    // Replace login link with profile link
-                    mainMenu.forEach(link => {
-                        if (link.name === "signup") {
-                            link.name = "login";
-                            link.link = "assets/pages/login.php"
-                        }
-                    })
-                }
-            })
 
 
         mainMenu.forEach(link => {

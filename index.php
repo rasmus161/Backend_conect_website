@@ -16,11 +16,13 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
-<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 broken,  5 broken and not styled, 6, 7 undone -->
- <!-- welcome back mesage is a bit wrong potentialy fix -->
+<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden”, 
+  5 broken and not styled, 6, 7 no php logic -->
+
 <!-- fix logo links on other than main page not working -->
 <!-- folder uploads not found by uppg 5 profile img fix -->
 <!-- add styling to profile img upload section -->
+<!-- fix login delay so mesage can be seen yay and the mesage is not  needed to be sen before presing login yay -->
 
 
 <!-- IDEAS-->

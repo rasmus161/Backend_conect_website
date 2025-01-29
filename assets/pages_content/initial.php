@@ -7,7 +7,7 @@ session_start();
 
 // set users cookies 
 
-$cookie_name = "user"; // add test_input obs!!
+$cookie_name = "user"; 
 $cookie_value = "rase";
 $cookie_time = "first_visit_time";
 
@@ -17,11 +17,11 @@ if (!isset($_COOKIE[$cookie_name])) {
 }
 
 // input data validator
+
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
   }
-
 
