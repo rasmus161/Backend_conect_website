@@ -1,9 +1,9 @@
 <?php
-
-if (isset($_SESSION['username'])) {
-    $username = $_SESSION['username'];
+session_start();
+if (isset($_SESSION['name'])) {
+    $usernamep = $_SESSION['name'];
 } else {
-    $username = 'Guest';
+    $usernamep = 'Guest';
 }
-echo "$username";
+echo "$usernamep";
 

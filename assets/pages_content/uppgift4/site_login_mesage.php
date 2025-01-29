@@ -38,7 +38,6 @@ if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 
 
 
 if ($loginSuccess) {
-   
     setcookie('login', 'true', time() + (86400 * 365 * 10), "/"); 
     header("refresh: 3; url = profile.php");
     exit(); // Terminate script execution to ensure redirection

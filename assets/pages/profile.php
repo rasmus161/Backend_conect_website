@@ -28,8 +28,8 @@
         <div class="container" id="profile-content">
             <div id="left">
 
-                <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?>
-                <?php include "./assets/pages_content/uppgift5/profile_img.php" ?>
+                <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
+               
 
                 <div id="socials-container">
                     <img src="" alt="test1">
