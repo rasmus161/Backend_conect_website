@@ -22,7 +22,7 @@
 <!-- fix logo links on other than main page not working -->
 <!-- folder uploads not found by uppg 5 profile img fix -->
 <!-- add styling to profile img upload section -->
-<!-- fix login delay so mesage can be seen yay and the mesage is not  needed to be sen before presing login yay -->
+<!-- change login check form cookies to sesion cookies so that user cant manipulate the login -->
 
 
 <!-- IDEAS-->
