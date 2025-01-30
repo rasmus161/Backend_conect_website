@@ -13,6 +13,7 @@ function test_input($data)
 }
 
 
+// Sanitize input
 $usernameLogin = test_input($_REQUEST['username-login']);
 $password = test_input($_REQUEST['password']);
 
@@ -26,12 +27,15 @@ $_SESSION['psw']  = $password;
 
 
 
+// Check if session and cookie are set
 if (isset($_COOKIE['first_visit_time'], $_SESSION['name'])) {
     echo "<h2>Welcome back! " . $_SESSION['name'] . " You visited us for the first time in " . $_COOKIE['first_visit_time'] . "</h2>";
 } else {
     echo "error loading message ";
 }
 
+
+// Check login success
 if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
     $loginSuccess = true;
 }
@@ -39,7 +43,7 @@ if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 
 
 if ($loginSuccess) {
     setcookie('login', 'true', time() + (86400 * 365 * 10), "/"); 
-    header("refresh: 3; url = profile.php");
-    exit(); // Terminate script execution to ensure redirection
+    header("refresh: 3; url = https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/profile.php");
+    
     
 }

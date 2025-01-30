@@ -1,7 +1,6 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
 
 $fileName = "./assets/pages_content/uppgift6/visit_count.txt";
 $ip = $_SERVER['REMOTE_ADDR'];

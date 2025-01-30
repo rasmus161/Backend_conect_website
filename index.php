@@ -32,7 +32,7 @@
 
 
 <body>
-
+    <?php include "./assets/pages_content/uppgift7/coment_field.php" ?>
     <?php include "./assets/pages_content/header.php" ?>
     <?php include "./assets/pages_content/uppgift6/visit_count.php" ?>
     <main>

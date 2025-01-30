@@ -29,7 +29,7 @@
             <div id="left">
 
                 <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
-               
+
 
                 <div id="socials-container">
                     <img src="" alt="test1">
@@ -110,8 +110,12 @@
         <div class="container" id="chat-content">
             <h2>Leave a cement below</h2>
 
-            <textarea name="profile-chat" id="chat-area"></textarea>
-            <button class="button-small">send chat</button>
+            <form method="post" action="../pages_content/uppgift7/save_comment.php">
+                <textarea name="comment" id="chat-area" placeholder="Your comment" required></textarea>
+                <button class="button-small" type="submit">Send</button>
+            </form>
+
+            <?php include "../pages_content/uppgift7/display_comments.php" ?>
 
         </div>
 
