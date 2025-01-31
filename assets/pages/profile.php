@@ -32,7 +32,7 @@
 
                 <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
                 <?php
-                echo "what is link: " .  $_SESSION["uploaded_file_path"]; // the seions varible seams to not be set humm
+                echo "what is link: " .  $_SESSION["uploaded_file_path"]; // the seions varible seams to not be set
                 if (isset($_SESSION["uploaded_file_path"])) {
                     echo '<img src="' . $_SESSION["uploaded_file_path"] . '" alt="Uploaded Image">';
                     echo "test what is the path" . $_SESSION["uploaded_file_path"];
@@ -51,8 +51,8 @@
                 </div>
 
                 <form action="../pages_content/uppgift5/profile_img.php" method="post" enctype="multipart/form-data" id="profile-img-form">
-                    <label>Update profile image</label>
-                    <input type="file" name="file-upload-input" id="file-upload-input">
+                    <h2>Update profile image</h2>
+                    <input type="file" name="file-upload-input" id="file-upload-input" >
                     <input type="submit" value="Upload Image" name="submit">
                 </form>
 
