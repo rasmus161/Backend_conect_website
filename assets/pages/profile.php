@@ -29,6 +29,10 @@
             <div id="left">
 
                 <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
+                <?php
+                echo "tests" . $_SERVER['DOCUMENT_ROOT'];
+                ?>
+
 
 
                 <div id="socials-container">
