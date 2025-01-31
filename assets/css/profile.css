@@ -62,11 +62,28 @@
     align-items: center;
 }
 
+
+#input-comment{
+    width:  700px;
+    height: 20px;
+    margin-top: 20px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+    #input-comment {
+        width: 300px;
+    }
+}
+
+
+
 #chat-area {
     width:  700px;
     height: 200px;
     margin-top: 20px;
-    resize: none
+    resize: none;
 }
 
 @media (max-width: 750px) {
@@ -74,3 +91,6 @@
         width: 300px;
     }
 }
+
+
+

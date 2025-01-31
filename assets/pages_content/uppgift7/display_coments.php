@@ -17,9 +17,8 @@ if (file_exists($file)) {
     } else {
         echo 'No comments found.';
     }
-} else {
-    echo 'Comments file not found.';
-}
+} 
+
 
 
 ?>
