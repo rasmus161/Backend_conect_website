@@ -1,4 +1,5 @@
 <?php include "../pages_content/initial.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <title>Profile</title>
 
-    <!-- info ideas !-->
-    <!-- lett the user only edit and save preferences on their own profile !-->
+    <!-- info/ideas -->
+    <!-- lett the user only edit and save preferences on their own profile -->
 
 </head>
 
@@ -27,10 +28,17 @@
 
         <div class="container" id="profile-content">
             <div id="left">
+                <!-- profile img here yay -->
 
                 <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
                 <?php
-                echo "tests" . $_SERVER['DOCUMENT_ROOT'];
+                echo "what is link: " .  $_SESSION["uploaded_file_path"]; // the seions varible seams to not be set humm
+                if (isset($_SESSION["uploaded_file_path"])) {
+                    echo '<img src="' . $_SESSION["uploaded_file_path"] . '" alt="Uploaded Image">';
+                    echo "test what is the path" . $_SESSION["uploaded_file_path"];
+                } else {
+                    echo "No image uploaded";
+                }
                 ?>
 
 

@@ -45,15 +45,15 @@ if ($uploadsOk == 0) {
 // Attempt to move the uploaded file
 if (move_uploaded_file($_FILES["file-upload-input"]["tmp_name"], $target_file)) {
     echo "The file " . htmlentities(basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
-    $uploaded_file_path = $target_file;
+    $_SESSION["uploaded_file_path"] = $target_file;
 } else {
     echo "Sorry, there was an error uploading your file.";
 }
 
- // Assuming $uploaded_file_path contains the path of the uploaded file
- if (isset($uploaded_file_path)) {
-    echo '<img src="' . $uploaded_file_path . '" alt="Uploaded Image">';
+// termporary plastement yay unitl i fix paths somehow
+if (isset($_SESSION["uploaded_file_path"])) {
+    echo '<img src="' . $_SESSION["uploaded_file_path"] . '" alt="Uploaded Image">';
+    echo "test what is the path" . $_SESSION["uploaded_file_path"];
 } else {
-    echo "No image uploaded.";
-    
+    echo "No image uploaded";
 }
