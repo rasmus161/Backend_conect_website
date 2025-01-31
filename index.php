@@ -16,8 +16,8 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
-<!-- progress report done 1, 2, 3 not resiving the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden” + not removing logout/changing profile to login on logout, 
-  5 broken and not styled, 6, 7 no php logic -->
+<!-- progress report done 1, 2, 3 not sending the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden” + not removing logout/changing profile to login on logout, 
+  5 broken and not styled, 6, 7  -->
 
 <!-- fix logo links on other than main page not working -->
 <!-- folder uploads not found by uppg 5 profile img fix -->
