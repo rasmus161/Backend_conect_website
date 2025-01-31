@@ -111,12 +111,14 @@
             <h2>Leave a cement below</h2>
 
             <form method="post" action="../pages_content/uppgift7/save_comment.php">
-                <textarea name="comment" id="chat-area" placeholder="Your comment" required></textarea>
+                <textarea name="comment" id="chat-area" placeholder="comment :" required></textarea>
                 <button class="button-small" type="submit">Send</button>
             </form>
 
-            <?php include "../pages_content/uppgift7/display_comments.php" ?>
 
+            <?php include "../pages_content/uppgift7/display_coments.php"; ?>
+            
+            <textarea rows="10" cols="50" readonly><?php echo $commentsText; ?></textarea>
         </div>
 
 

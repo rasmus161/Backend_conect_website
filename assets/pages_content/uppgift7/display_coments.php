@@ -1,15 +1,26 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$file = 'comments.json';
 
-if(file_exists($file)){
-    $comments =  json_decode(file_get_contents($file), true);
 
-    if ($comments){
-        foreach ($comments as $comment){
-            echo "". htmlspecialchars($comment['chatTime']) . htmlspecialchars($comment['chatName']). htmlspecialchars($comment['comment']) ;
-        
+
+
+
+$file = __DIR__ . '/comments.json'; // Ensure the correct path to comments.json
+$commentsText = '';
+
+if (file_exists($file)) {
+    $comments = json_decode(file_get_contents($file), true);
+
+    if (is_array($comments)) {
+        foreach ($comments as $comment) {
+            $commentsText .= htmlspecialchars($comment['chatTime']) . ' ' . htmlspecialchars($comment['chatName']) . ': ' . htmlspecialchars($comment['comment']) . "\n";
         }
+    } else {
+        echo 'No comments found.';
     }
+} else {
+    echo 'Comments file not found.';
 }
+
+
+?>
+
