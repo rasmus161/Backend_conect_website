@@ -30,13 +30,19 @@
             <div>
                 <h2 class="text-normal-dark">Webbrapport Rasmus porthin</h2>
 
-                <h3>Slutsats</h3>
+                <h3>Delupgifterna</h3>
                 <p>
-                    Slutligen tog det en hell del arbete mer än jag förväntat mig och jag lärde mig om flex box, bild –
-                    videoeditering och en hell del nya html css metoder som jag kan använda för att strukturera
-                    webbsidor i framtiden men märkte att det finns en hell del mera som man kan lära sig för att bli
-                    bättre och att bli vanare vid att skriva kod så det går snabbare.
+                Uppgifterna 1och 2 fungerar som de borde fungera men uppgift 3 fungerar men gmilen verkar inte chicas i väg även om coden enlighet mig ser helt corect ut. Sen vid login, logout och signup är de för
+                 någon orsak något som inte fungerar som de borde som jag inte förstor vad det är frågan om. För att i huvud menyn finns det logout som inte försvinner när den borde tillexempel och session variblar som 
+                 inte verkar finas när man ändrar mellan sidor. Sedan fill hanterings uppgifterna 5 till 7 fungerar som de borde utom att inget namn kommer fram vid billeden vid inloggning och bilden inte är där efter 
+                 uppladdningen.
 
+                </p>
+
+                <h3>Feedback</h3>
+                <p>
+                Det skulle ha varit bra att indämnings dagen vore inskriven tidigare redan i början av kursen för tidsplanering även om vad som borde fungera till vilken lektion fans. Platsen i github för uppgiften klarare och 
+                när jag var borta från en lektion tak vare flunsa. kom inte inspelningen från lektionen upp på en hell stund.
                 </p>
 
             </div>

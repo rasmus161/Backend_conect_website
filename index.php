@@ -19,16 +19,14 @@
 <!-- progress report done 1, 2, 3 not sending the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden” + not removing logout/changing profile to login on logout, 
   5 broken and not styled, 6, 7  -->
 
-<!-- fix logo links on other than main page not working -->
-<!-- folder uploads not found by uppg 5 profile img fix -->
-<!-- add styling to profile img upload section -->
+<!-- fix logo link on other than main page not working -->
 <!-- change login check form cookies to sesion cookies so that user cant manipulate the login -->
 
 
 <!-- IDEAS-->
-<!-- fix  spasing in the nav when howering over the nav -->
-<!-- make about page in to 2 separate tabels of info -->
-<!-- make time update with js every second to display time until date bether -->
+<!-- fix  spacing in the nav when hovering over the nav -->
+<!-- make about page in to 2 separate tables of info -->
+<!-- make time update with js every second to display time until date -->
 
 
 <body>

@@ -43,7 +43,7 @@ if (isset($_SESSION['name'], $_SESSION['psw']) && $_SERVER['REQUEST_METHOD'] == 
 
 if ($loginSuccess) {
     setcookie('login', 'true', time() + (86400 * 365 * 10), "/"); 
-    header("refresh: 3; url = https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/assets/pages/profile.php");
+    header("refresh: 3; url = https://cgi.arcada.fi/~porthinr/webb/Backend_conect_website/index.php");
     
     
 }
