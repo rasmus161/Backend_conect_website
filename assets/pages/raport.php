@@ -42,7 +42,7 @@
                 <h3>Feedback</h3>
                 <p>
                 Det skulle ha varit bra att indämnings dagen vore inskriven tidigare redan i början av kursen för tidsplanering även om vad som borde fungera till vilken lektion fans. Platsen i github för uppgiften klarare och 
-                när jag var borta från en lektion tak vare flunsa. kom inte inspelningen från lektionen upp på en hell stund.
+                när jag var borta från en lektion tak vare flunsa. kom inte inspelningen från lektionen upp på en bra stund.
                 </p>
 
             </div>

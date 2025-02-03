@@ -16,9 +16,6 @@
     <title>about</title>
 </head>
 <!-- TO DO LIST-->
-<!-- progress report done 1, 2, 3 not sending the g mile but is corect, 4 Skriv ut använ-darnamnet bredvid “profilbilden” + not removing logout/changing profile to login on logout, 
-  5 broken and not styled, 6, 7  -->
-
 <!-- fix logo link on other than main page not working -->
 <!-- change login check form cookies to sesion cookies so that user cant manipulate the login -->
 
