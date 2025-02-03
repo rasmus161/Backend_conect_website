@@ -2,7 +2,7 @@
 
 // Start the session
 session_start();
-echo ini_get('session.cookie_domain');
+
 
 
 

@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 $file = __DIR__ . '/comments.json'; // Ensure the correct path to comments.json
 $commentsText = '';
 
@@ -18,7 +14,6 @@ if (file_exists($file)) {
         echo 'No comments found.';
     }
 } 
-
 
 
 ?>

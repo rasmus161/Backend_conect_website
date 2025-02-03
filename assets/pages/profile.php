@@ -1,4 +1,4 @@
-<?php include "../pages_content/initial.php" ?>
+<?php include "./assets/pages_content/initial.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,7 @@
 
                 <p> <?php include "./assets/pages_content/uppgift4/profile_img_name.php" ?></p>
                 <?php
-                echo "what is link: " .  $_SESSION["uploaded_file_path"]; // the seions varible seams to not be set
+                echo "what is link: " .  $_SESSION["uploaded_file_path"]; // the seions varible seams to not be found from here?
                 if (isset($_SESSION["uploaded_file_path"])) {
                     echo '<img src="' . $_SESSION["uploaded_file_path"] . '" alt="Uploaded Image">';
                     echo "test what is the path" . $_SESSION["uploaded_file_path"];

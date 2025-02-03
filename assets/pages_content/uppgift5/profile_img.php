@@ -44,7 +44,7 @@ if ($uploadsOk == 0) {
 
 // Attempt to move the uploaded file
 if (move_uploaded_file($_FILES["file-upload-input"]["tmp_name"], $target_file)) {
-    echo "The file " . htmlentities(basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
+    echo "The file " . (basename($_FILES["file-upload-input"]["name"])) . " was successfully uploaded";
     $_SESSION["uploaded_file_path"] = $target_file;
 } else {
     echo "Sorry, there was an error uploading your file.";
